@@ -31,7 +31,7 @@ public class WeatherUtils {
         Map<String,String> map = new HashMap<String,String>();
         map.put("district_id","130100"); // 石家庄行政代码
         map.put("data_type","all");//这个是数据类型
-        map.put("ak","xPgOmbGWpEEhp0DHF1VB3Pz63G3N60Uv");//百度天气ak码
+        map.put("ak","xxxx");//百度天气ak码
         String res = restTemplate.getForObject(
                 "https://api.map.baidu.com/weather/v1/?district_id={district_id}&data_type={data_type}&ak={ak}",
                 String.class,
