@@ -22,7 +22,7 @@ public class CaiHongPiUtils {
      * @return
      */
     public static String getCaiHongPi() {
-        String httpUrl = "http://api.tianapi.com/caihongpi/index?key=317dcef343a561130b81a950990603eb";
+        String httpUrl = "http://api.tianapi.com/caihongpi/index?key=xxx";
         BufferedReader reader = null;
         String result = null;
         StringBuffer sbf = new StringBuffer();
@@ -64,7 +64,7 @@ public class CaiHongPiUtils {
      * @return
      */
     public static Map<String,String> getXZ() {
-        String httpUrl = "http://api.tianapi.com/star/index?key=317dcef343a561130b81a950990603eb&astro=白羊座";
+        String httpUrl = "http://api.tianapi.com/star/index?key=xxx&astro=白羊座";
         BufferedReader reader = null;
         String result = null;
         StringBuffer sbf = new StringBuffer();
@@ -100,7 +100,7 @@ public class CaiHongPiUtils {
      * @return
      */
     public static Map<String,String> getEnsentence() {
-        String httpUrl = "http://api.tianapi.com/ensentence/index?key=317dcef343a561130b81a950990603eb";
+        String httpUrl = "http://api.tianapi.com/ensentence/index?key=xxx";
         BufferedReader reader = null;
         String result = null;
         StringBuffer sbf = new StringBuffer();
