@@ -21,8 +21,8 @@ public class Pusher {
     public static void main(String[] args) {
         push();
     }
-    private static String appId = "wx43804192c15a56d9";
-    private static String secret = "8f36c0cf3c9d34facd22166399e719ef";
+    private static String appId = "xxx";
+    private static String secret = "xxx";
 
     private static List<WxMpTemplateMessage> list;
 
@@ -36,13 +36,13 @@ public class Pusher {
         //2,推送消息
         //她
         WxMpTemplateMessage templateMessage = WxMpTemplateMessage.builder()
-                .toUser("oHked53f23-eYh3Aq79i9XlZdoQs")
-                .templateId("SpMf97CxxFbohs9o8duUWfWPH3vFDuAFWHSu5esW58M")
+                .toUser("xxx")
+                .templateId("xxx")
                 .build();
         //我
         WxMpTemplateMessage templateMessage2 = WxMpTemplateMessage.builder()
-                .toUser("oHked58Lt5McEvUdCpNBODu_ANT0")
-                .templateId("SpMf97CxxFbohs9o8duUWfWPH3vFDuAFWHSu5esW58M")
+                .toUser("xxx")
+                .templateId("xxx")
                 .build();
         list=new ArrayList<WxMpTemplateMessage>();//简便代码，下面用for循环
         list.add(templateMessage);
@@ -67,15 +67,15 @@ public class Pusher {
             w.addData(new WxMpTemplateData("type",CaiHongPiUtils.getXZ().get("type") +"","#C71585"));
         }
 
-        String beizhu = "帅帅❤冉冉";
+        String beizhu = "帅❤冉";
         if(JiNianRiUtils.getLianAi() % 365 == 0){
             beizhu = "今天是恋爱" + (JiNianRiUtils.getLianAi() / 365) + "周年纪念日！";
         }
         if(JiNianRiUtils.getBirthday_Shuai()  == 0){
-            beizhu = "今天是帅帅生日，生日快乐呀！";
+            beizhu = "今天是帅生日，生日快乐呀！";
         }
         if(JiNianRiUtils.getBirthday_RR()  == 0){
-            beizhu = "今天是冉冉生日，生日快乐呀！";
+            beizhu = "今天是冉生日，生日快乐呀！";
         }
         templateMessage.addData(new WxMpTemplateData("beizhu",beizhu,"#FF0000"));
         templateMessage2.addData(new WxMpTemplateData("beizhu",beizhu,"#FF0000"));
